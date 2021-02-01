@@ -65,8 +65,8 @@ if [[ $os == "windows"* ]]; then
   fi
 else
   echo "Installing /tmp/tflint to /usr/local/bin..."
-  sudo mkdir -p /usr/local/bin
-  sudo install -b -c -v /tmp/tflint /usr/local/bin/
+  mkdir -p /usr/local/bin
+  install -b -c -v /tmp/tflint /usr/local/bin/
   retVal=$?
   if [ $retVal -ne 0 ]; then
     echo "Failed to install tflint"
